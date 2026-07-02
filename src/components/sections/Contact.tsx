@@ -31,12 +31,12 @@ export function Contact() {
             <ScribbleArrow direction="right" className="h-4 w-14" delay={0.2} />
           </div>
 
-          <div className="flex gap-5 font-mono text-sm">
+          <div className="flex gap-3">
             <a
               href={contact.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="font-medium text-pen underline decoration-pen-soft decoration-2 underline-offset-4 hover:text-ink"
+              className="rounded-sm border-2 border-ink px-6 py-3 font-mono text-sm font-medium text-ink transition-transform hover:-translate-y-0.5"
             >
               LinkedIn
             </a>
@@ -45,7 +45,7 @@ export function Contact() {
                 href={contact.github}
                 target="_blank"
                 rel="noreferrer"
-                className="font-medium text-pen underline decoration-pen-soft decoration-2 underline-offset-4 hover:text-ink"
+                className="rounded-sm border-2 border-ink px-6 py-3 font-mono text-sm font-medium text-ink transition-transform hover:-translate-y-0.5"
               >
                 GitHub
               </a>
