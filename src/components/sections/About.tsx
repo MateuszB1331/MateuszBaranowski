@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "../../lib/LanguageContext";
 import { about } from "../../data/content";
 import { ScribbleUnderline } from "../sketch/ScribbleUnderline";
+import portrait from "../../assets/mateusz-portrait.png";
 
 export function About() {
   const { t } = useLanguage();
@@ -31,9 +32,28 @@ export function About() {
           </div>
         </div>
 
-        <p className="-rotate-2 self-center font-hand text-2xl text-marker sm:mt-2">
-          ↳ {t(about.note)}
-        </p>
+        <div className="flex flex-col items-center gap-5 sm:items-end">
+          <motion.div
+            initial={{ opacity: 0, rotate: -8, y: 12 }}
+            whileInView={{ opacity: 1, rotate: 3, y: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="relative"
+          >
+            <span
+              aria-hidden="true"
+              className="absolute -top-3 left-1/2 h-6 w-16 -translate-x-1/2 -rotate-6 bg-highlight/70"
+              style={{ boxShadow: "0 1px 2px rgba(0,0,0,0.15)" }}
+            />
+            <img
+              src={portrait}
+              alt="Mateusz Baranowski"
+              className="w-40 border-4 border-paper shadow-lg sm:w-48"
+            />
+          </motion.div>
+
+          <p className="-rotate-2 font-hand text-2xl text-marker">↳ {t(about.note)}</p>
+        </div>
       </div>
     </section>
   );
