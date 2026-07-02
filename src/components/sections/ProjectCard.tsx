@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import type { Project } from "../../types/project";
 import { useLanguage } from "../../lib/LanguageContext";
 import { projectsSection } from "../../data/content";
-import { ScribbleCircle } from "../sketch/ScribbleCircle";
+import { ScribbleUnderline } from "../sketch/ScribbleUnderline";
 
 export function ProjectCard({ project, index }: { project: Project; index: number }) {
   const { t } = useLanguage();
@@ -44,9 +44,9 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
           </dt>
           <dd className="relative mt-1 inline-block font-medium text-ink">
             {t(project.result)}
-            <ScribbleCircle
+            <ScribbleUnderline
               delay={0.2}
-              className="pointer-events-none absolute -inset-x-3 -inset-y-2 -z-10 h-[calc(100%+16px)] w-[calc(100%+24px)]"
+              className="pointer-events-none absolute -bottom-1 left-0 h-2 w-full"
             />
           </dd>
         </div>

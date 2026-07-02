@@ -34,6 +34,10 @@ export const about = {
       en: "I started with writing — journalism and copywriting taught me that if you can't explain something clearly, you don't understand it well enough.",
     },
     {
+      pl: "W świat AI wciągnąłem się od strony kreatywnej — zaczynałem od generowania wideo, sprawdzając, co w produkcji treści da się zautomatyzować. Stamtąd był już tylko krok do n8n: zdobyłem certyfikat i zacząłem stawiać pierwsze platformy automatyzujące całe procesy od A do Z.",
+      en: "I got pulled into AI from the creative side — starting with AI video generation, testing what could be automated in content production. From there it was a short step to n8n: I got certified and started building my first end-to-end platforms that automated entire processes.",
+    },
+    {
       pl: "Dziś tę samą precyzję stosuję do budowania systemów: n8n, Claude API, Python. Nie projektuję automatyzacji na slajdach — siadam i buduję, dopóki nie zadziała.",
       en: "Today I apply that same precision to building systems: n8n, Claude API, Python. I don't design automation on slides — I sit down and build until it works.",
     },
